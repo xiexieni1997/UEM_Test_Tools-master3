@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>538</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>UEM信息检查工具v1.7</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>res/skins/uem.ico</normaloff>res/skins/uem.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>UEM信息检查工具</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>1.UEM安装检查：</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择MD5列表文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>选择文件</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择UEM安装目录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>选择文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#aaaa7f</string>
+          </property>
+          <property name="text">
+           <string>待检查UEM安装</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>计算目录文件MD5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查UEM安装情况</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="text">
+           <string>2.UEM登录前检查：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查UEM服务启动</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#aaaa7f</string>
+          </property>
+          <property name="text">
+           <string>待检查UEM服务</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查UEM注册表信息</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="2">
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#aaaa7f</string>
+          </property>
+          <property name="text">
+           <string>待检查注册表</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>一键检查UEM文件版本号</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="text">
+           <string>3.UEM登录后检查：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_14">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查UEM策略信息（当前策略）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="2">
+         <widget class="QLineEdit" name="lineEdit_13">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请输入进程ID</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="3">
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查网络隔离缓存信息</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="4">
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="text">
+           <string>4.PC端信息收集：（仅用于问题排查，如存在敏感信息，请和客户确认）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_5">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择PC信息存放目录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2">
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="text">
+           <string>选择文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="3">
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>一键收集</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="4">
+         <widget class="QTextBrowser" name="textBrowser_2">
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>UEM日志检查工具</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_30">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>1.UEM审计日志检查：</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_20">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>查询下发的UEM审计代理地址及连通性</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_32">
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#7d7d7d</string>
+          </property>
+          <property name="text">
+           <string>(bRet=1表示连通，bRet=1表示不通)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_21">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>查询文件导入导出审计使用的地址</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_22">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>查询剪切板拷贝审计使用的地址</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_29">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="text">
+           <string>2.登录耗时日志检测：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_19">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>检查UEM登录流程耗时</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QTextBrowser" name="textBrowser_3">
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>UEM效果测试工具</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_25">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>1.程序启动时长测试：</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择程序路径</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请输入启动程序的窗口名称</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="pushButton_9">
+          <property name="text">
+           <string>选择程序</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>程序启动时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" colspan="2">
+         <widget class="QLCDNumber" name="lcdNumber">
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#55ffff</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="smallDecimalPoint">
+           <bool>false</bool>
+          </property>
+          <property name="digitCount">
+           <number>6</number>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+          <property name="value" stdset="0">
+           <double>0.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>测试程序拉起时间</string>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>2.网络访问测试：</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>访问类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>目的地址：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>目的端口：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>访问次数：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>访问时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox">
+          <item>
+           <property name="text">
+            <string>TELNET</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HTTP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HTTPS</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="comboBox_2">
+          <item>
+           <property name="text">
+            <string>单个IP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IP范围</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>域名</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="comboBox_3">
+          <item>
+           <property name="text">
+            <string>单个端口</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>端口范围</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="comboBox_4">
+          <item>
+           <property name="text">
+            <string>访问一次</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自定义</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>持续访问</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLCDNumber" name="lcdNumber_2">
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#55ffff</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="smallDecimalPoint">
+           <bool>false</bool>
+          </property>
+          <property name="digitCount">
+           <number>6</number>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Flat</enum>
+          </property>
+          <property name="value" stdset="0">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="intValue" stdset="0">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="lineEdit_6">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>例如：10.242.2.158</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QLineEdit" name="lineEdit_7">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>例如：80</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="2">
+         <widget class="QLineEdit" name="lineEdit_8">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>默认访问一次</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QPushButton" name="pushButton_15">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>START</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="4">
+         <widget class="QPushButton" name="pushButton_18">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#ff0000</string>
+          </property>
+          <property name="text">
+           <string>STOP</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="6">
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>常用分析工具</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_27">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>1.常用问题定位工具：</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>Procexp</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QPushButton" name="pushButton_16">
+          <property name="text">
+           <string>ResHacker</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton_29">
+          <property name="text">
+           <string>DebugView</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="pushButton_17">
+          <property name="text">
+           <string>Procmon</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5" colspan="2">
+         <widget class="QPushButton" name="pushButton_23">
+          <property name="text">
+           <string>hash_1.0.4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QPushButton" name="pushButton_24">
+          <property name="text">
+           <string>FVIE</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="8">
+         <widget class="QLabel" name="label_28">
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>2.程序信息一键收集工具：（用于程序仓库信息收集,默认版权信息不输出到Execl）</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="4">
+         <widget class="QLineEdit" name="lineEdit_9">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择exe程序</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QPushButton" name="pushButton_25">
+          <property name="text">
+           <string>选择程序</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6" colspan="2">
+         <widget class="QPushButton" name="pushButton_26">
+          <property name="styleSheet">
+           <string notr="true">background-color:#aaff00</string>
+          </property>
+          <property name="text">
+           <string>一键查询程序信息</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="4">
+         <widget class="QLineEdit" name="lineEdit_14">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请选择程序仓库Excel存放路径</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QPushButton" name="pushButton_28">
+          <property name="text">
+           <string>选择文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_10">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请输入程序名称</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_11">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请输入标签</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_12">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>请输入描述</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="6" colspan="2">
+         <widget class="QPushButton" name="pushButton_27">
+          <property name="styleSheet">
+           <string notr="true">background-color:#00ff00</string>
+          </property>
+          <property name="text">
+           <string>生成execl结果</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="8">
+         <widget class="QTextBrowser" name="textBrowser_4">
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#0000ff</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
